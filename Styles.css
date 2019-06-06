@@ -11,6 +11,22 @@ html {
 body {
     box-sizing: border-box;
 }
+a:link {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+a:active {
+    text-decoration: none;
+    color: white;
+}
 .wrap {
     background-color: #C2ECFC;
     margin: 20px auto;
@@ -76,4 +92,23 @@ body {
     background-size: contain;
     border: solid 10px #2B0038;
     top: 150px;
+}
+.QA {
+    width: 40%;
+    height: 400px;
+}
+.reassure {
+    clear:both;
+    margin: 0 auto;
+    width: 80%;
+}
+.left {
+    float:left
+}
+.right {
+    float:right;
+}
+.center {
+    margin: 10px auto;
+    text-align: center;
 }

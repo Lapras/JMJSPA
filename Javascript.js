@@ -15,7 +15,18 @@ var answers = [
     'No.'
 ];
 function answer() {
-    prompt('Ask the 8 ball you question!', 'question');
+    data.questions.push(prompt('Ask the 8 ball you question!', 'question'));
     let randNum = Math.floor(Math.random() * answers.length);
     document.getElementById('display').innerHTML = answers[randNum];
+    data.answers.push(answers[randNum]);
+}
+let data = {
+    questions:"",
+    answers:"",
+}
+function ansRef() {
+    document.getElementById('answers').innerHTML=data.answers;
+}
+function qRef() {
+    document.getElementById('questions').innerHTML=data.questions;
 }
