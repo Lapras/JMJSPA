@@ -19,6 +19,7 @@ function answer() {
     let randNum = Math.floor(Math.random() * answers.length);
     document.getElementById('display').innerHTML = answers[randNum];
     data.answers.push(answers[randNum]);
+    alert(answers[randNum]);
 }
 let data = {
     questions:"",
