@@ -15,16 +15,15 @@ var answers = [
     'No.'
 ];
 function answer() {
-    data.questions.push(prompt('Ask the 8 ball you question!', 'question'));
+    prompt('Ask the 8 ball you question!', 'question');
     let randNum = Math.floor(Math.random() * answers.length);
-    document.getElementById('display').innerHTML = answers[randNum];
-    data.answers.push(answers[randNum]);
-    alert(answers[randNum]);
+    document.getElementById("display").innerHTML = answers[randNum];
+    alert("oof");
+    answers.push(answers[randNum]);
+    alert("fin");
 }
-let data = {
-    questions:"",
-    answers:"",
-}
+let questions = [];
+let answers = [];
 function ansRef() {
     document.getElementById('answers').innerHTML=data.answers;
 }
