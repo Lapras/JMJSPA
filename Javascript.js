@@ -1,4 +1,4 @@
-var answers = [
+let answers = [
     'Your question confuses me, mortal.',
     'No, you fool, this is false',
     'I am not sure, this is larger than me',
@@ -14,19 +14,11 @@ var answers = [
     'Nope, no way.',
     'No.'
 ];
-function answer() {
-    prompt('Ask the 8 ball you question!', 'question');
+let answer = [];
+let question = [];
+function eightBoi() {
+    question.push(prompt('Ask the 8 ball you question!', 'question'));
     let randNum = Math.floor(Math.random() * answers.length);
     document.getElementById("display").innerHTML = answers[randNum];
-    alert("oof");
-    answers.push(answers[randNum]);
-    alert("fin");
-}
-let questions = [];
-let answers = [];
-function ansRef() {
-    document.getElementById('answers').innerHTML=data.answers;
-}
-function qRef() {
-    document.getElementById('questions').innerHTML=data.questions;
+    answer.push(answers[randNum]);
 }
