@@ -22,3 +22,9 @@ function eightBoi() {
     document.getElementById("display").innerHTML = answers[randNum];
     answer.push(answers[randNum]);
 }
+function qRef() {
+    document.getElementById("questions").innerHTML = answer;
+}
+function ansRef() {
+    document.getElementById("answers").innerHTML = question;
+}
