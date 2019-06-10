@@ -23,8 +23,6 @@ function eightBoi() {
     answer.push(answers[randNum]);
 }
 function qRef() {
-    document.getElementById("questions").innerHTML = answer;
-}
-function ansRef() {
-    document.getElementById("answers").innerHTML = question;
+    document.getElementById("questions").innerHTML = question;
+    document.getElementById("answers").innerHTML = answer;
 }

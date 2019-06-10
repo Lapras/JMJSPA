@@ -94,8 +94,10 @@ a:active {
     top: 150px;
 }
 .QA {
+    margin: 10px;
     width: 40%;
     height: 400px;
+    overflow: scroll;
 }
 .reassure {
     clear:both;
