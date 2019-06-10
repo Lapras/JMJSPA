@@ -16,11 +16,13 @@ let answers = [
 ];
 let answer = [];
 let question = [];
+let Qnum = 0;
 function eightBoi() {
-    question.push(prompt('Ask the 8 ball you question!', 'question'));
+    Qnum ++;
+    question.push(Qnum + "." + prompt('Ask the 8 ball you question!', 'question') + "<br>");
     let randNum = Math.floor(Math.random() * answers.length);
     document.getElementById("display").innerHTML = answers[randNum];
-    answer.push(answers[randNum]);
+    answer.push(Qnum + "." + answers[randNum] + "<br>");
 }
 function qRef() {
     document.getElementById("questions").innerHTML = question;
