@@ -114,3 +114,12 @@ a:active {
     margin: 10px auto;
     text-align: center;
 }
+.memewrap {
+    background-color: #C2ECFC;
+    margin: 20px auto;
+    text-align: center;
+    border: 10px #B08C64;
+    box-shadow: 0 0 10px 5px black;
+    width: 80%;
+    border-radius: 50px;
+}
